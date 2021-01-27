@@ -28,6 +28,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "devDependencies": {
-    "@types/leaflet": "^1.5.21"
+    "@types/leaflet": "^1.5.21",
+    "@types/react-leaflet": "^2.5.2"
   }
 }
