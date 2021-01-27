@@ -1,8 +1,11 @@
 version: '3'
 services:
-  app:
+  dev:
     build: 
       context: .
     volumes:
-      - ./:/app:cached      
+      - ./:/app:cached
+    command: yarn run webpack-dev-server --host 0.0.0.0
+    ports:
+      - 8080:8080
     
