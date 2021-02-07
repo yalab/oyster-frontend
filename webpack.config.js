@@ -20,7 +20,9 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.tsx?$/, loader: 'ts-loader' }
+      { test: /\.tsx?$/, loader: 'ts-loader' },
+      { test: /\.css$/i, use: ['style-loader', 'css-loader'] },
+      { test: /\.(png|jpe?g|gif)$/i, use: ['file-loader'] }
     ]
   }
 }
